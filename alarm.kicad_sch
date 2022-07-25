@@ -1,0 +1,76 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid de701ae3-e907-420a-864b-d7f4c3309844)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 142.24 72.39) (size 22.86 13.97) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid d7765555-85d1-40ab-a055-81354f0195d8)
+    (property "Sheet name" "Dual Channel Driver" (id 0) (at 142.24 71.6784 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "dual_channel_driver.kicad_sch" (id 1) (at 142.24 86.9446 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (pin "EN_2" input (at 142.24 83.82 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 76eb6704-f38d-44c2-8c1f-4c4515565f3e)
+    )
+    (pin "STATUS_2" input (at 142.24 81.28 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 3866363a-b7e7-40ed-b312-9721d68d77b8)
+    )
+    (pin "VCC" input (at 165.1 74.93 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 85598269-cae8-4d3a-bff6-f25b1f0657a1)
+    )
+    (pin "OUT_1" input (at 165.1 81.28 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 332b61fe-f987-4e62-bb13-a69bc357e2b0)
+    )
+    (pin "OUT_2" input (at 165.1 83.82 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 076e0db6-083e-4933-98b8-68ab5c40cc0b)
+    )
+    (pin "EN_1" input (at 142.24 77.47 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 009452d2-2901-49f1-bb44-684b550f8c78)
+    )
+    (pin "STATUS_1" input (at 142.24 74.93 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 7a05eeba-4a88-4aac-bae7-b6591cce1eb7)
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+    (path "/d7765555-85d1-40ab-a055-81354f0195d8" (page "2"))
+  )
+
+  (symbol_instances
+    (path "/d7765555-85d1-40ab-a055-81354f0195d8/63f881e4-35fb-495c-929a-f88490a8277e"
+      (reference "#PWR0101") (unit 1) (value "GNDREF") (footprint "")
+    )
+    (path "/d7765555-85d1-40ab-a055-81354f0195d8/7a6862c2-08e6-4d59-8269-e264db8e7deb"
+      (reference "R1") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+    )
+    (path "/d7765555-85d1-40ab-a055-81354f0195d8/8941d8a0-467b-4230-b0fb-22e4a4dc22fe"
+      (reference "R2") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+    )
+    (path "/d7765555-85d1-40ab-a055-81354f0195d8/c8f0d8e7-e5db-4429-92ce-e9684891455e"
+      (reference "U1") (unit 1) (value "VND5160J") (footprint "PowerSSO:POWERSSO-12")
+    )
+    (path "/d7765555-85d1-40ab-a055-81354f0195d8/3b2bf564-0123-4494-9342-83f5a9e55c98"
+      (reference "U1") (unit 2) (value "VND5160J") (footprint "PowerSSO:POWERSSO-12")
+    )
+    (path "/d7765555-85d1-40ab-a055-81354f0195d8/8fcdf962-9791-4705-addc-e71e397cc759"
+      (reference "U1") (unit 3) (value "VND5160J") (footprint "PowerSSO:POWERSSO-12")
+    )
+  )
+)
